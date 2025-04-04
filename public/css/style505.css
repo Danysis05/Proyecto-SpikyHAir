@@ -1,0 +1,46 @@
+body{
+    font-family: sans-serif;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0 0 0 / .8), rgba(0 0 0 / .8)), url(/imgen/Peluqueria10.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 17%;
+    height: 820px;
+}
+.container img{
+    width: 500px;
+    height: 500px;
+}
+
+.text{
+    margin-top: 100px;
+    color: white;
+}
+.text h1{
+    font-size: 70px;
+}
+
+.text h4{
+    font-size: 40px;
+}
+a{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
