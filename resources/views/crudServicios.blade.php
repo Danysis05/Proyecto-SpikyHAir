@@ -53,17 +53,7 @@
         @endforeach
     </select>
 
-    <label for="detalles">Filtrar por Detalles:</label>
-    <select name="detalles" id="detalles">
-        <option value="">Todos</option>
-        @foreach($servicios->unique('detalles') as $servicio)
-            @if($servicio->detalles)
-                <option value="{{ $servicio->detalles }}" {{ request('detalles') == $servicio->detalles ? 'selected' : '' }}>
-                    {{ $servicio->detalles }}
-                </option>
-            @endif
-        @endforeach
-    </select>
+
 
     <button type="submit">Filtrar</button>
 </form>

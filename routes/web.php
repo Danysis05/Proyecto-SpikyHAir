@@ -51,6 +51,7 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/reservas/{reserva}', [ReservasController::class, 'update'])->name('reservas.update');
 
     Route::delete('/reservas/{reserva}', [ReservasController::class, 'destroy'])->name('reservas.destroy');
+    Route::delete('/reservas/usuario/{reserva}', [ReservasController::class, 'destroyCliente'])->name('reservas.destroyUsuario');
 
 });
 

@@ -87,7 +87,7 @@
                     <a href="{{ route('reservas.edit', $reserva) }}">Editar</a>
 
 
-                    <form action="{{ route('reservas.destroy', $reserva->id) }}" method="POST">
+                    <form action="{{ route('reservas.destroyUsuario', $reserva->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger" onclick="return confirm('¿Estás seguro de eliminar esta reserva?')">Eliminar</button>
