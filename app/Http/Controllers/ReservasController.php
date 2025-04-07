@@ -152,7 +152,7 @@ class ReservasController extends Controller
     {
         $reserva->delete(); // Laravel ya obtiene la reserva automáticamente
 
-        return redirect()->route('crudReservasUsuario')
+        return redirect()->route('crudReservasAdmin')
             ->with('success', 'Reserva eliminada correctamente.');
     }
 }
